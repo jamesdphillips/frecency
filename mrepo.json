@@ -1,0 +1,20 @@
+{
+  "workspace": {
+    "name": "packages",
+    "scope": "frecency",
+    "registry": "npm",
+    "packages": []
+  },
+  "packageGenerator": {
+    "subGenerators": [],
+    "defaultOptions": {
+      "access": "restricted",
+      "license": "MIT",
+      "authorName": "James Phillips",
+      "authorEmail": "jamesdphillips@gmail.com",
+      "updateTsconfig": true,
+      "subGenerators": [],
+      "dependencies": []
+    }
+  }
+}

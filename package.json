@@ -1,0 +1,63 @@
+{
+  "name": "frecency",
+  "version": "0.0.0",
+  "description": "Monorepo for frecency",
+  "license": "MIT",
+  "repository": "https://github.com/frecency/frecency",
+  "workspaces": [
+    "packages/*"
+  ],
+  "author": {
+    "name": "James Phillips",
+    "email": "jamesdphillips@gmail.com"
+  },
+  "private": true,
+  "scripts": {
+    "boot": "npx lerna bootstrap",
+    "build": "mrepo build",
+    "clean": "mrepo clean",
+    "commit_": "npx git-cz",
+    "format": "npx pretty-quick --pattern \"packages/**/*.*(js|ts)\"",
+    "generate": "mrepo generate",
+    "link_": "mrepo link",
+    "lint": "npx eslint \"packages/**/!(*.d).ts\" --fix",
+    "list_": "npx lerna list -l",
+    "prepare": "npx husky install",
+    "reboot": "yarn clean && npx rimraf ./node_modules && yarn boot",
+    "release": "mrepo release",
+    "test": "mrepo test",
+    "test:coverage": "mrepo test --coverage",
+    "test:e2e": "mrepo test -f e2e",
+    "unlink_": "mrepo unlink"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-conventional-changelog"
+    }
+  },
+  "devDependencies": {
+    "@types/jest": "26.0.21",
+    "@types/node": "14.14.35",
+    "@typescript-eslint/eslint-plugin": "4.19.0",
+    "@typescript-eslint/parser": "4.19.0",
+    "@zmotivat0r/mrepo": "0.3.2",
+    "commitizen": "4.2.3",
+    "conventional-changelog-cli": "2.1.1",
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "7.22.0",
+    "eslint-config-airbnb-base": "14.2.1",
+    "eslint-config-prettier": "8.1.0",
+    "eslint-plugin-import": "2.22.1",
+    "husky": "5.2.0",
+    "jest": "26.6.3",
+    "jest-extended": "0.11.5",
+    "lerna": "^3.22.1",
+    "prettier": "2.2.1",
+    "pretty-quick": "3.1.0",
+    "rimraf": "3.0.2",
+    "ts-jest": "26.5.2",
+    "tsconfig-extends": "1.0.1",
+    "tsconfig-paths": "3.9.0",
+    "typescript": "3.9.9"
+  }
+}
