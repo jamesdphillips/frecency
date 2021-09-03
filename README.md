@@ -5,5 +5,5 @@
 ## Installation
 
 ```
-npm i @frecency/core
+npm i --save @frecency/core
 ```
