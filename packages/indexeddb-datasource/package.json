@@ -1,0 +1,27 @@
+{
+  "name": "@frecency/indexeddb-datasource",
+  "description": "indexeddb-datasource package",
+  "version": "0.0.0",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "repository": "https://github.com/frecency/frecency",
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "files": [
+    "lib",
+    "LICENSE",
+    "README.md"
+  ],
+  "author": {
+    "name": "James Phillips",
+    "email": "jamesdphillips@gmail.com"
+  },
+  "devDependencies": {
+    "fake-indexeddb": "^3.1.3"
+  },
+  "scripts": {
+    "build": "npx tsc -b"
+  }
+}

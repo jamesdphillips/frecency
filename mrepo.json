@@ -3,7 +3,17 @@
     "name": "packages",
     "scope": "frecency",
     "registry": "npm",
-    "packages": []
+    "packages": [
+      {
+        "name": "core"
+      },
+      {
+        "name": "webworker"
+      },
+      {
+        "name": "indexeddb-datasource"
+      }
+    ]
   },
   "packageGenerator": {
     "subGenerators": [],

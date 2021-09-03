@@ -14,8 +14,25 @@
     "skipLibCheck": false,
     "composite": true,
     "baseUrl": "./packages",
-    "paths": {}
+    "paths": {
+      "@frecency/core": ["core/src"],
+      "@frecency/core/*": ["core/src/*"],
+      "@frecency/webworker": ["webworker/src"],
+      "@frecency/webworker/*": ["webworker/src/*"],
+      "@frecency/indexeddb-datasource": ["indexeddb-datasource/src"],
+      "@frecency/indexeddb-datasource/*": ["indexeddb-datasource/src/*"]
+    }
   },
   "include": [],
-  "references": []
+  "references": [
+    {
+      "path": "core"
+    },
+    {
+      "path": "webworker"
+    },
+    {
+      "path": "indexeddb-datasource"
+    }
+  ]
 }

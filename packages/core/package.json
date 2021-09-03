@@ -1,0 +1,24 @@
+{
+  "name": "@frecency/core",
+  "description": "core package",
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "repository": "https://github.com/jamesdphillips/frecency",
+  "publishConfig": {
+    "access": "restricted"
+  },
+  "files": [
+    "lib",
+    "LICENSE",
+    "README.md"
+  ],
+  "author": {
+    "name": "James Phillips",
+    "email": "jamesdphillips@gmail.com"
+  },
+  "scripts": {
+    "build": "npx tsc -b"
+  }
+}

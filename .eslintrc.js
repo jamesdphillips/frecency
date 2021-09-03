@@ -21,7 +21,6 @@ module.exports = {
     'lines-between-class-members': ['error', 'always'],
     'padded-blocks': ['error', 'never'],
     semi: ['error', 'always'],
-    quotes: ['error', 'single', { avoidEscape: true }],
     'max-len': ['error', { code: 120, comments: 200 }],
     'comma-dangle': ['error', 'always-multiline'],
     '@typescript-eslint/no-namespace': 'off',
