@@ -39,3 +39,16 @@ export const visit = (now: number, prev: FrecentScore): FrecentScore => {
     score: Math.log1p(Math.exp(prev.score - decay)) + decay,
   };
 };
+
+const now = () => (new Date()).getTime();
+
+export const createVisit = (hl: number, nowfn = now) => {
+  return (prev?: FrecentScore): FrecentScore => {
+    if (prev) {
+      return visit(nowfn(), prev);
+    }
+    return init(nowfn(), hl);
+  };
+};
+
+export default createVisit;
