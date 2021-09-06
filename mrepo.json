@@ -8,9 +8,6 @@
         "name": "core"
       },
       {
-        "name": "webworker"
-      },
-      {
         "name": "indexeddb-datasource"
       }
     ]
