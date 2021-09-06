@@ -120,7 +120,7 @@ const getItem = <T>(
   key: string,
 ): Promise<T | undefined> => {
   return new Promise((resolve, reject) => {
-    const request = store.get([path, key]);
+    const request = store.get([key, path]);
     request.onsuccess = () => {
       resolve(request.result);
     };

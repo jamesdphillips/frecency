@@ -18,6 +18,9 @@
     "name": "James Phillips",
     "email": "jamesdphillips@gmail.com"
   },
+  "dependencies": {
+    "@frecency/core": "^0.1.0"
+  },
   "devDependencies": {
     "fake-indexeddb": "^3.1.3"
   },
