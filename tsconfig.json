@@ -17,8 +17,6 @@
     "paths": {
       "@frecency/core": ["core/src"],
       "@frecency/core/*": ["core/src/*"],
-      "@frecency/webworker": ["webworker/src"],
-      "@frecency/webworker/*": ["webworker/src/*"],
       "@frecency/indexeddb-datasource": ["indexeddb-datasource/src"],
       "@frecency/indexeddb-datasource/*": ["indexeddb-datasource/src/*"]
     }
@@ -27,9 +25,6 @@
   "references": [
     {
       "path": "core"
-    },
-    {
-      "path": "webworker"
     },
     {
       "path": "indexeddb-datasource"
